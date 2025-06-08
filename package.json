@@ -1,5 +1,5 @@
 {
-  "name": "app",
+  "name": "touch-events",
   "version": "1.0.0",
   "description": "A demonstrator for JavaScript touch events, showcasing multi-touch, pinch-to-zoom, and draggable elements.",
   "main": "public/index.html",
@@ -19,11 +19,11 @@
     "type": "git",
     "url": "git+https://github.com/Justinjdaniel/learn-TouchEvents.git"
   },
-  "keywords": [],
+  "keywords": ["touch events"],
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Justinjdaniel/learn-TouchEvents/issues"
   },
-  "homepage": "https://github.com/Justinjdaniel/learn-TouchEvents#readme"
+  "homepage": "https://github.com/Justinjdaniel/learn-TouchEvents"
 }
