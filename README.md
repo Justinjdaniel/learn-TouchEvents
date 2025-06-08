@@ -7,10 +7,10 @@ The demo visually represents touch points and showcases features like multi-touc
 
 ## Live Demo
 
-[![GitHub Pages Deploy](https://img.shields.io/github/deployments/YOUR_USERNAME/YOUR_REPOSITORY_NAME/github-pages?label=GitHub%20Pages&logo=github)](https://YOUR_USERNAME.github.io/YOUR_REPOSITORY_NAME/)
+[![GitHub Pages Deploy](https://img.shields.io/github/deployments/justinjdaniel/learn-TouchEvents/github-pages?label=GitHub%20Pages&logo=github)](https://justinjdaniel.github.io/learn-TouchEvents/)
 
 This project is automatically deployed to GitHub Pages. You can access the live demo at:
-[https://YOUR_USERNAME.github.io/YOUR_REPOSITORY_NAME/](https://YOUR_USERNAME.github.io/YOUR_REPOSITORY_NAME/)
+[Live Demo](https://justinjdaniel.github.io/learn-TouchEvents/)
 
 (Note: You might need to enable GitHub Pages in your repository settings and ensure the deployment URL is correct.)
 
