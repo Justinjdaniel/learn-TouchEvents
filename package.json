@@ -1,8 +1,8 @@
 {
   "name": "app",
   "version": "1.0.0",
-  "description": "## Description",
-  "main": "index.js",
+  "description": "A demonstrator for JavaScript touch events, showcasing multi-touch, pinch-to-zoom, and draggable elements.",
+  "main": "public/index.html",
   "devDependencies": {
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
