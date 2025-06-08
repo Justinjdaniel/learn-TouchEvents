@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta description="A simple template that helps you learn touch events." />
+    <meta
+      keyword="'touch events', 'touch event', 'touch event tutorial', 'touch event tutorial for beginners', 'touch event tutorial for web developers', 'touch event tutorial for web designers'"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Touch Events Demo</title>
+    <script src="../src/script.js" defer></script>
+    <style>
+      .dot {
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        background-color: red;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      .note {
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgba(206, 206, 206);
+        font-weight: bold;
+        text-shadow: 0 0 1px black;
+        font: 1em sans-serif;
+        -ms-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+      }
+      .zoom-text-container {
+        margin-top: 50px; /* Give some space from the top message */
+        padding: 20px;
+        border: 1px solid #ccc;
+        text-align: center;
+        -webkit-user-select: none; /* Safari */
+        -ms-user-select: none; /* IE 10 and IE 11 */
+        user-select: none; /* Standard syntax */
+      }
+      #zoomableText {
+        font-size: 16px; /* Initial font size */
+        transition: font-size 0.1s ease-out; /* Smooth transition */
+      }
+      .draggable {
+        width: 100px;
+        height: 100px;
+        background-color: lightblue;
+        border: 2px solid dodgerblue;
+        position: absolute; /* Important for positioning */
+        top: 150px; /* Initial position */
+        left: 50px; /* Initial position */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: grab;
+        -webkit-user-select: none; /* Safari */
+        -ms-user-select: none; /* IE 10 and IE 11 */
+        user-select: none; /* Standard syntax */
+        z-index: 10; /* Ensure it's above other elements initially */
+      }
+      .draggable.dragging {
+        cursor: grabbing;
+        opacity: 0.8;
+        z-index: 20; /* Bring to front when dragging */
+      }
+    </style>
+  </head>
+  <body>
+    <h3 class="note">Touch anywhere to see the touch response</h3>
+    <!-- the element is created as user touches the screen -->
+    <!-- Pinch-to-Zoom Feature -->
+    <div class="zoom-text-container" id="zoomTextContainer">
+      <p id="zoomableText">Pinch to Zoom Me!</p>
+    </div>
+    <!-- Draggable Element Feature -->
+    <div id="draggableElement" class="draggable">Drag Me!</div>
+  </body>
+</html>
