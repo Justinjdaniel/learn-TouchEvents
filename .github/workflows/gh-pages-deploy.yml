@@ -29,7 +29,3 @@ jobs:
           # Upload entire repository. Path defaults to current directory.
           # We will serve from the /public directory.
           path: './public'
-
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
