@@ -37,7 +37,7 @@ document.addEventListener(
       dot.classList.add('dot');
       dot.style.left = `${touch.pageX}px`;
       dot.style.top = `${touch.pageY}px`;
-      dot.id = touch.identifier;
+      dot.id = 'touch-' + touch.identifier;
 
       // Assign a unique color to the new touch
       if (!activeTouches[touch.identifier]) {
@@ -62,7 +62,7 @@ document.addEventListener(
   'touchmove',
   (e) => {
     [...e.changedTouches].forEach((touch) => {
-      const dot = document.getElementById(touch.identifier);
+      const dot = document.getElementById('touch-' + touch.identifier);
       if (dot) {
         // Ensure dot exists, as touchmove can sometimes fire unexpectedly
         dot.style.left = `${touch.pageX}px`;
@@ -83,7 +83,7 @@ document.addEventListener(
   'touchend',
   (e) => {
     [...e.changedTouches].forEach((touch) => {
-      const dot = document.getElementById(touch.identifier);
+      const dot = document.getElementById('touch-' + touch.identifier);
       if (dot) {
         dot.remove();
       }
@@ -106,7 +106,7 @@ document.addEventListener(
   'touchcancel',
   (e) => {
     [...e.changedTouches].forEach((touch) => {
-      const dot = document.getElementById(touch.identifier);
+      const dot = document.getElementById('touch-' + touch.identifier);
       if (dot) {
         dot.remove();
       }
